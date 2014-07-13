@@ -470,14 +470,77 @@ Salstat can handle Microsoft Excel and Libre Office calc spreadsheets.
  File extensions are:
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-Excel .xls .xlsx
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Format
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-LibreOffice ods
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+File extension
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Excel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.xls, .xlsx
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LibreOffice Calc
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.ods
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -608,12 +671,238 @@ a lot of data might well be copyrighted.
 Transforming data
 \end_layout
 
+\begin_layout Standard
+Salstat can transform data.
+ Transformed data are useful when analysis has certain assumptions about
+ the data's distribution.
+ For example, t-tests require that both variables have a normal distribution
+ and similar variances.
+ If one of the variables is skewed, a transform is a function applied to
+ every item to make it closer to a normal distribution.
+ 
+\end_layout
+
+\begin_layout Standard
+To do a transform:
+\end_layout
+
+\begin_layout Itemize
+Click on the 
+\shape slanted
+Analyse
+\shape default
+ menu item
+\end_layout
+
+\begin_layout Itemize
+Select the 
+\shape slanted
+Transform data...
+
+\shape default
+ option
+\end_layout
+
+\begin_layout Itemize
+Select the variable(s) you want to transform
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Either click on a pre-prepared transform (square root, logarithm, reciprocal,
+ or square)
+\end_layout
+
+\begin_layout Itemize
+or Enter a Python function in the text box marked 
+\shape slanted
+Function:
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Click on the 
+\shape slanted
+Okay
+\shape default
+ button
+\end_layout
+
+\begin_layout Standard
+The transformed data will appear as a new variable in the data editor.
+ 
+\end_layout
+
 \begin_layout Section
 Pre-prepared transforms
 \end_layout
 
+\begin_layout Standard
+Salstat has a number of pre-prepared transformations.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transform
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Square root
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Logarithm
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reciprocal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Square
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Applying one of these set transforms is simple.
+ With the data already on the grid, open the transform window by clicking
+ on the 
+\shape slanted
+Analyse
+\shape default
+ menu item and then click on the 
+\shape slanted
+Transform data...
+
+\shape default
+ menu item.
+ A new dialog will appear.
+\end_layout
+
+\begin_layout Standard
+[image of dialog]
+\end_layout
+
+\begin_layout Standard
+This dialog wants two pieces of information from you:
+\end_layout
+
+\begin_layout Enumerate
+What variables to transform?
+\end_layout
+
+\begin_layout Enumerate
+How to transform the data?
+\end_layout
+
+\begin_layout Standard
+The left-hand side of the dialog is where you specify what variables you
+ want to transform.
+ Notice that it only allows you to select variables that have some data
+ (why transform an empty space?).
+ Select one or more variables you want to transform (and don't worry – salstat
+ will not overwrite them but put the transformed data into a new variable.
+ 
+\end_layout
+
+\begin_layout Standard
+With that done, you can select one of the pre-prepared transforms.
+ Let's try the reciprocal.
+ Just click the button marked 
+\shape slanted
+Reciprocal
+\shape default
+.
+ You should see 1 / x appear in the text field marked 
+\shape slanted
+Function
+\shape default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+If you click the 
+\shape slanted
+Okay
+\shape default
+ button, the dialog will disppear and a new variable appears.
+ It has the same name as the variable you selected but with the word 
+\shape slanted
+Reciprocal
+\shape default
+ appended so you know what transform was done on it.
+ This variable's data is the transformed data.
+\end_layout
+
 \begin_layout Section
 Advanced transforms
+\end_layout
+
+\begin_layout Standard
+A powerful addition to the transform functions is the ability to add your
+ own custom transforms.
+ The function has to be a Python function and you might well need to ensure
+ that a function from Python's 
+\shape slanted
+Math
+\shape default
+ module is properly defined.
+ Open the transform dialog again and click on the 
+\shape slanted
+Logarithm
+\shape default
+ button and you can see the function is now defined as 
+\family typewriter
+math.log(x)
+\family default
+.
+ This shows you how the transform should be specified.
 \end_layout
 
 \begin_layout Chapter
