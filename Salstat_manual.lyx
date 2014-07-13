@@ -310,8 +310,155 @@ You can select, for example, from a range of common delimiters or even enter
 Line endings
 \end_layout
 
+\begin_layout Standard
+Files from different operating system tend to use different codes for line
+ endings.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Operating system
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Line ending
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Windows
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CR/LF (Carriage return / line feed)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Macintosh pre-OS X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CR only (Carriage return)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unix including Macintosh OS X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LF only (Line feed)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You can read a lot more at the Wikipedia page for newline (http://en.wikipedia.org
+/wiki/Newline).
+\end_layout
+
+\begin_layout Standard
+Salstat handles all of these so you can choose which line ending is best
+ for your file.
+ The beauty of the preview is that it you can try different line endings
+ to see which one works best with your files.
+\end_layout
+
+\begin_layout Standard
+Salstat will also make a guess at the correct line ending for you.
+ Most of the time this works perfectly well but you can change it if you
+ know better.
+\end_layout
+
 \begin_layout Subsection
-Headings and importing from line...
+Headings and importing from line
+\end_layout
+
+\begin_layout Standard
+With many statistics programs, you can only import the data and trim it
+ if there are lines with data.
+ Salstat lets you trim before you import and lets you specify which line
+ contains the variable names (the 
+\shape slanted
+header row
+\shape default
+).
+ From the preview, you can see if the file has variable names and it so,
+ what row the are.
+ Simply specify what row Salstat should import data from and then tick the
+ checkbox marked, 
+\begin_inset Quotes eld
+\end_inset
+
+
+\shape slanted
+Header on first row
+\shape default
+
+\begin_inset Quotes erd
+\end_inset
+
+ if this row contains the variable names.
+ The little preview grid should show you what the final import will look
+ like.
+ 
 \end_layout
 
 \begin_layout Section
@@ -851,10 +998,6 @@ Salstat can handle lots of grouping variables.
  And it can handle as many grouping variables as you like, as long as your
  computer can handle it.
  
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Chapter
