@@ -1,0 +1,25 @@
+List of Salstat screenshots needed
+
+Overall view after opening
+Installing libraries on command line
+CSV file preview
+Spreadsheet preview
+Live web page import dialog
+Live web page import preview
+Transform dialog
+Basic descriptives dialog
+Basic descriptives results
+Advanced descriptives dialog
+Cross-tab descriptives dialog
+Cross-tab descriptives results
+Charts dialog
+Charts in results
+1 Sample tests dialogs
+1 sample test results
+2 sample tests dialog
+2 sample test results
+Correlation dialog
+Correlation results
+2+ sample tests dialog
+2+ sample test results
+
